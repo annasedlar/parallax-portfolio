@@ -14,12 +14,14 @@
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
+
+
 <body>
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo" style="position:fixed">Anna Sedlar</a>
+      <a id="logo-container" href="#" class="brand-logo">Anna Sedlar</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="Sedlar_Anna_Resume.pdf" target="_blank"><i class="material-icons">description</i></a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -38,7 +40,7 @@
           <h5 class="header col s12 light">Hi I'm Anna, I make web apps</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get to know me and my work!</a>
+          <a href="#bringMeHere" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get to know me and my work!</a>
         </div>
         <br><br>
 
@@ -53,12 +55,13 @@
 
       <!--   Icon Section   -->
       <div class="row">
-       <h3 class="center">Core Tech Skills</h3>
+       <h3 class="center" id="bringMeHere">Core Tech Skills</h3>
        <h5 class="center">How the magic happens</h5>
         <div class="col s12 m6 skillz">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center brown-text"><i class="material-icons">done</i></h2>
             <h4>What I've learned</h4>
+            <div class="center">
             <i class="devicon-html5-plain-wordmark colored"></i>
             <i class="devicon-css3-plain-wordmark colored"></i>
             <i class="devicon-sass-original colored"></i>
@@ -71,15 +74,18 @@
             <i class="devicon-jquery-plain-wordmark colored"></i>
             <i class="devicon-react-original-wordmark colored"></i>
           </div>
+          </div>
         </div>
         <div class="col s12 m6">
           <div class="icon-block">
-          <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+          <h2 class="center brown-text"><i class="material-icons">trending_up</i></h2>
           <h4 class="center">What I'm learning now</h4>
+          <div class="center">
             <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
             <i class="devicon-mongodb-plain-wordmark colored"></i>
             <i class="devicon-nodejs-plain-wordmark colored"></i>
             <i class="devicon-python-plain-wordmark colored"></i><br/><br/>
+          </div>
           </div>
         </div>
       </div>
@@ -117,14 +123,13 @@
           <h3><i class="mdi-content-send brown-text"></i></h3>
             <h2 id="projects-title">Projects</h2>
             <div class="col s6 container thumnail">
-              <a href={upd8edURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
-                <img src={upd8edpic} alt="up8ed_news-aggregator"/>
+                <img src=tv1.png alt="up8ed_news-aggregator"/>
                 <h1>Upd8ed</h1>
-                <p><a href="https://github.com/mason0958/News-Aggregator" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
+                <p><a href="https://github.com/mason0958/News-Aggregator" target="_blank">See code on Github</a> || <a href="http://annasedlar.com/upd8ed" target="_blank" style="margin:'auto'; padding:'10%'">Click for live demo</a></p>
                </a>
             </div>
             <div class="col s6">
-                <h4>Upd8ed is a news aggregator.</h4>
+                <h5>Upd8ed is a news aggregator.</h5>
                 <p>Get all the news from multiple sources on one site!</p>
                 <p>This site is built solely on the front-end as a week-long sprint project with Connie, Mason, Paul at <a href="http://digitalcrafts.com" target="_blank">DigitalCrafts</a>.</p>
                 <p> (P.S. we won "Best Overall"!)</p>
@@ -132,32 +137,52 @@
             </div>
             <div class="container col s12 thumbnail">
                 <div class="col s6">
-                  <a href={chatdrawURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
-                    <img src={chatdraw} alt="chatdraw"/>
+                    <img src=chatdraw.png alt="chatdraw"/>
                     <h1>Chat-Draw</h1>
-                    <p><a href="https://github.com/annasedlar/Chat-Draw" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
+                    <p><a href="https://github.com/annasedlar/Chat-Draw" target="_blank">See code on Github</a> || <a href="http://annasedlar.com/chatdraw" target="_blank" style="margin:'auto', padding:'10%'">Click for live demo</a></p>
                    </a>
                 </div>
                 <div class="col s6">
-                    <h4>Chat-Draw is a Chat Room</h4>
+                    <h5>Chat-Draw is a Chat Room</h5>
                     <p>A real-time chat/drawing application built using the HTML5 canvas element, websockets (socket.io) and Node.js</p>
                 </div>
             </div> 
             <div class="container col s12 thumbnail">
               <div class="col s6">
-                <a href={whatToWatchURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
-                  <img src={whattowatch} alt="whattowatch"/>
+                  <img src=whattowatch.png alt="whattowatch"/>
                   <h1>What To Watch</h1>
-                  <p><a href="https://github.com/annasedlar/What_to_watch" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
+                  <p><a href="https://github.com/annasedlar/What_to_watch" target="_blank">See code on Github</a> || <a href="http://annasedlar.com/whattowatch" target="_blank" style="margin:'auto', padding:'10%'">Click for live demo</a></p>
                  </a>
               </div>
               <div class="col s6">
-                  <h4>What To Watch is a Movie App</h4>
+                  <h5>What To Watch is a Movie App</h5>
                   <p>This app pulls live data to see currently playing movies, filter movies by genre, and search a movie based on movie or actor/ess name. Built with the TMDb (The Movie Database) API</p>
                   <p>These link to the original project. Since then, another 4 iterations have been written using various technologies including Express, React, and Mongo. Eventually they will all be pulled together into one.</p>
               </div>
             </div>                 
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col s12 row">
+      <h2 class="center">Education</h2>
+      <h4><br/></h4>
+      <div class="col s6">
+      <div style="margin-right:40px">
+        <img class="center" src=dc.png alt="become_a_builder_of_things" style="width:50%; margin: auto; text-align:center" />
+        <div class="row">
+          <p><a href="http://digitalcrafts.com" target="_blank">DigitalCrafts</a> is a top-rated full stack web and software development immersive program in Atlanta covering the most relevant web technologies and best-practice methodologies to build fully functional applications.
+           This 16 week program covers HTML, CSS, Bootstrap, Javascript, React.js Node.js, MongoDB and Python, to prepare students to work as Full Stack Developers and Software Engineers.</p>
+        </div></div>
+      </div>
+        <div class="col s6">
+          <div style="margin-left:40px">
+          <img class="center" src=UMheader.png alt="Go Blue" style="width:80%" />
+          <div class="row">
+            <p>I studied <a href="https://lsa.umich.edu/earth" target="_blank">Earth</a> and <a href="http://lsa.umich.edu/pite" target="_blank">Environmental Sciences</a>
+              at the University of Michigan focusing on the origin, evolution, and future of the Earth while taking into account the complex interactions of humans and our environment. To understand these patterns and systems, I developed though my degree program a multidisciplinary and holistic perspective towards the challenges our Earth, population, and climate faces. This degree integrates the methods and approaches of social sciences and humanities with a strong and broad foundation in natural and physical sciences.</p>
+        </div>
         </div>
       </div>
     </div>
@@ -173,26 +198,18 @@
     <div class="parallax"><img src="trees-dave.jpg" alt="Unsplashed background img 3"></div>
   </div>
 
+
+
+
+
   <footer class="page-footer teal">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+          <h5 class="white-text">Connect with me</h5>
+          <p class="grey-text text-lighten-4">I love to meet new people and would love to talk about your web, app, or tech needs. Email me at annasedlar@gmail.com or find me on these platforms:</p>
 
-
-
-
-
-
-<!-- 
-
-         <div className="contactme" id="contactme">
-         <div className="col-sm-10 col-sm-offset-1 contact_box">
-            <h1>Contact Me</h1>
-            <p>I love meeting new people and would love to talk about your web, app, or tech needs.</p>
-            <p>Email me at annasedlar@gmail.com or find me on these platforms</p>
-            <div>
+            <!-- <div>
             <a href="https://www.linkedin.com/in/annasedlar" target="_blank"><img src={li} className='lg_icons' alt='linkedin' /></a>
             <a href="https://github.com/annasedlar" target="_blank"><img src={git} className='lg_icons' alt='github' /></a>
             <a href="https://twitter.com/annasedlar" target="_blank"><img src={tw} className='lg_icons' alt='twitter' /></a>
@@ -207,29 +224,21 @@
         </div>
       </div> -->
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col l2 s12">
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col l4 s12">
+          <div>
+            <a href="https://www.linkedin.com/in/annasedlar" target="_blank"><img src="sm-icons/linkedin.png" class='lg_icons' alt='linkedin' /></a>
+            <a href="https://github.com/annasedlar" target="_blank"><img src="sm-icons/github.png" class='lg_icons' alt='github' /></a>
+            <a href="https://twitter.com/annasedlar" target="_blank"><img src="sm-icons/twitter.png" class='lg_icons' alt='twitter' /></a>
+            <a href="mailto:annasedlar@gmail.com" target="_blank"><img src="sm-icons/mail.png" class='lg_icons' alt='email_me' /></a>
+          </div>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
       </div>
     </div>
   </footer>
@@ -239,6 +248,12 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
+  <script>
+    $("#download-button").click(function() {
+      $('html, body').animate({
+          scrollTop: $("#bringMeHere").offset().top
+      }, 1000);
+    });
+  </script>
   </body>
 </html>
