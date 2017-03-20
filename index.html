@@ -4,6 +4,9 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
   <link rel="shortcut icon" href="wave.png">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+
   <title>Anna Sedlar</title>
 
   <!-- CSS  -->
@@ -30,18 +33,18 @@
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Anna Sedlar</h1>
+        <h1 class="header center white-text">Anna Sedlar</h1>
         <div class="row center">
           <h5 class="header col s12 light">Hi I'm Anna, I make web apps</h5>
         </div>
         <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">See what I do!</a>
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get to know me and my work!</a>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="foliage.jpg" alt="Mount Sopris"></div>
+    <div class="parallax" id="lax1"><img src="foliage.jpg" alt="Colombian Foliage"></div>
   </div>
 
 
@@ -50,26 +53,37 @@
 
       <!--   Icon Section   -->
       <div class="row">
-        <div class="col s12 m6">
+       <h3 class="center">Core Tech Skills</h3>
+       <h5 class="center">How the magic happens</h5>
+        <div class="col s12 m6 skillz">
           <div class="icon-block">
             <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">What I've learned</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+            <h4>What I've learned</h4>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+            <i class="devicon-sass-original colored"></i>
+            <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            <i class="devicon-chrome-plain-wordmark colored"></i>
+            <i class="devicon-git-plain-wordmark colored"></i><br/>
+            <i class="devicon-github-plain-wordmark colored"></i>
+            <i class="devicon-sourcetree-plain-wordmark colored"></i>
+            <i class="devicon-javascript-plain-wordmark colored"></i>
+            <i class="devicon-jquery-plain-wordmark colored"></i>
+            <i class="devicon-react-original-wordmark colored"></i>
           </div>
         </div>
-
         <div class="col s12 m6">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-            <h5 class="center">What I'm learning now</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+          <h4 class="center">What I'm learning now</h4>
+            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+            <i class="devicon-mongodb-plain-wordmark colored"></i>
+            <i class="devicon-nodejs-plain-wordmark colored"></i>
+            <i class="devicon-python-plain-wordmark colored"></i><br/><br/>
           </div>
         </div>
       </div>
-
-    </div>
+   </div>
   </div>
 
 
@@ -87,17 +101,66 @@
   <div class="container">
     <div class="section">
 
+
+
+
+
+
+
+
+
+
+
+
       <div class="row">
-        <div class="col s12 center">
+        <div class="col s12 center projects" id="projects">
           <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+            <h2 id="projects-title">Projects</h2>
+            <div class="col s6 container thumnail">
+              <a href={upd8edURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
+                <img src={upd8edpic} alt="up8ed_news-aggregator"/>
+                <h1>Upd8ed</h1>
+                <p><a href="https://github.com/mason0958/News-Aggregator" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
+               </a>
+            </div>
+            <div class="col s6">
+                <h4>Upd8ed is a news aggregator.</h4>
+                <p>Get all the news from multiple sources on one site!</p>
+                <p>This site is built solely on the front-end as a week-long sprint project with Connie, Mason, Paul at <a href="http://digitalcrafts.com" target="_blank">DigitalCrafts</a>.</p>
+                <p> (P.S. we won "Best Overall"!)</p>
+                <p>We are working to implement a reddit-style upvote/downvote component on the back-end.</p>
+            </div>
+            <div class="container col s12 thumbnail">
+                <div class="col s6">
+                  <a href={chatdrawURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
+                    <img src={chatdraw} alt="chatdraw"/>
+                    <h1>Chat-Draw</h1>
+                    <p><a href="https://github.com/annasedlar/Chat-Draw" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
+                   </a>
+                </div>
+                <div class="col s6">
+                    <h4>Chat-Draw is a Chat Room</h4>
+                    <p>A real-time chat/drawing application built using the HTML5 canvas element, websockets (socket.io) and Node.js</p>
+                </div>
+            </div> 
+            <div class="container col s12 thumbnail">
+              <div class="col s6">
+                <a href={whatToWatchURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
+                  <img src={whattowatch} alt="whattowatch"/>
+                  <h1>What To Watch</h1>
+                  <p><a href="https://github.com/annasedlar/What_to_watch" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
+                 </a>
+              </div>
+              <div class="col s6">
+                  <h4>What To Watch is a Movie App</h4>
+                  <p>This app pulls live data to see currently playing movies, filter movies by genre, and search a movie based on movie or actor/ess name. Built with the TMDb (The Movie Database) API</p>
+                  <p>These link to the original project. Since then, another 4 iterations have been written using various technologies including Express, React, and Mongo. Eventually they will all be pulled together into one.</p>
+              </div>
+            </div>                 
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
-
 
   <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
@@ -122,55 +185,8 @@
 
 
 
+<!-- 
 
- <!--     <div className="col-sm-12 row projects" id="projects">
-     <div id="projects-title">
-            <h2>Projects</h2>
-     </div>
-     <div className="container col-xs-12 thumbnail">
-            <div className="col-xs-6">
-              <a href={upd8edURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
-                <img src={upd8edpic} alt="up8ed_news-aggregator"/>
-                <h1>Upd8ed</h1>
-                <p><a href="https://github.com/mason0958/News-Aggregator" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
-               </a>
-            </div>
-            <div className="col-xs-6">
-                <h1>Upd8ed is a news aggregator.</h1>
-                <p>Get all the news from multiple sources on one site!</p>
-                <p>This site is built solely on the front-end as a week-long sprint project with Connie, Mason, Paul at <a href="http://digitalcrafts.com" target="_blank">DigitalCrafts</a>.</p>
-                <p> (P.S. we won "Best Overall"!)</p>
-                <p>We are working to implement a reddit-style upvote/downvote component on the back-end.</p>
-            </div>
-        </div>
-        <div className="container col-xs-12 thumbnail">
-            <div className="col-xs-6">
-              <a href={chatdrawURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
-                <img src={chatdraw} alt="chatdraw"/>
-                <h1>Chat-Draw</h1>
-                <p><a href="https://github.com/annasedlar/Chat-Draw" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
-               </a>
-            </div>
-            <div className="col-xs-6">
-                <h1>Chat-Draw is a Chat Room</h1>
-                <p>A real-time chat/drawing application built using the HTML5 canvas element, websockets (socket.io) and Node.js</p>
-            </div>
-        </div> 
-        <div className="container col-xs-12 thumbnail">
-            <div className="col-xs-6">
-              <a href={whatToWatchURL} target="_blank" style={{margin:'auto', padding:'10%'}}>
-                <img src={whattowatch} alt="whattowatch"/>
-                <h1>What To Watch</h1>
-                <p><a href="https://github.com/annasedlar/What_to_watch" target="_blank">See code on Github</a> || Click anywhere for live demo</p>
-               </a>
-            </div>
-            <div className="col-xs-6">
-                <h1>What To Watch is a Movie App</h1>
-                <p>This app pulls live data to see currently playing movies, filter movies by genre, and search a movie based on movie or actor/ess name. Built with the TMDb (The Movie Database) API</p>
-                <p>These link to the original project. Since then, another 4 iterations have been written using various technologies including Express, React, and Mongo. Eventually they will all be pulled together into one.</p>
-            </div>
-        </div>                 
-   </div> 
          <div className="contactme" id="contactme">
          <div className="col-sm-10 col-sm-offset-1 contact_box">
             <h1>Contact Me</h1>
@@ -189,23 +205,7 @@
             
           </div>
         </div>
-      </div>
-      -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </div> -->
         </div>
         <div class="col l3 s12">
           <h5 class="white-text">Settings</h5>
