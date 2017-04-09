@@ -5,10 +5,30 @@
  *
  * Made By MaterializeCSS.com
  */
+text{
+  font-family: open sans light, helvetica, arial, sans-serif !important; 
+}
 
-nav ul a,
-nav .brand-logo {
-  color: #444;
+.projects-title{
+  margin-bottom: 3%
+}
+
+.projects .thumbnail{
+  transition: all .2s ease-in-out;
+  margin-bottom: 5%;
+}
+
+.projects .thumbnail:hover{
+  transform: scale(1.1);
+  }
+
+.header{
+    text-shadow: 2px 2px 3px #000000;
+}
+
+h6{
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 p {
@@ -16,8 +36,9 @@ p {
 }
 
 img{
-  max-width: 100%;gi
+  max-width: 100%;
 }
+
 
 .lg_icons{
   width: 50px;
@@ -27,7 +48,7 @@ img{
 }
 
 .lg_icons:hover, .lg_iconsf:hover{
-  background-color: darkgrey;
+  background-color: white;
   border-radius: 50%;
 }
 
@@ -42,8 +63,19 @@ img{
   color: rgba(255,255,255,.9);
 }
 
+#darken{
+  background: -webkit-linear-gradient(left, rgba(0,0,0,0.2), rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, rgba(0,0,0,0.2), rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, rgba(0,0,0,0.2), rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0)); /* Standard syntax (must be last) */
+}
+
+.parallax img{
+  filter: saturate(1.1);
+}
+
 #lax1{
-  height: 500px !important;
+  height: 700px !important;
 }
   .parallax-container .section {
     width: 100%;
@@ -65,12 +97,6 @@ img{
   }
 }
 
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
 
 footer.page-footer {
   margin: 0;

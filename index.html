@@ -16,37 +16,35 @@
 </head>
 
 
+
+
+
+
+
+
+
+
+
+
+
 <body>
-  <nav class="white" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Anna Sedlar</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="Sedlar_Anna_Resume.pdf" target="_blank"><i class="material-icons">description</i></a></li>
-      </ul>
-
-      <ul id="nav-mobile" class="side-nav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
-
+<div id="darken">
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center white-text">Anna Sedlar</h1>
-        <div class="row center">
-          <h5 class="header col s12 light">Hi I'm Anna, I make web apps</h5>
-        </div>
-        <div class="row center">
-          <a href="#bringMeHere" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get to know me and my work!</a>
-        </div>
-        <br><br>
-
+          <h1 class="header white-text" style="font-weight:lighter;">Anna Sedlar</h1>
+          <div class="row">
+            <h5 class="header col s12 light" style="font-weight:lighter;">Hi I'm Anna, I make web apps</h5>
+          </div>
+          <div class="row">
+            <a href="#bringMeHere" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get to know me!</a>
+          </div>
+          <br><br>
       </div>
     </div>
     <div class="parallax" id="lax1"><img src="foliage.jpg" alt="Colombian Foliage"></div>
+    </div>
   </div>
 
 
@@ -55,37 +53,52 @@
 
       <!--   Icon Section   -->
       <div class="row">
-       <h3 class="center" id="bringMeHere">Core Tech Skills</h3>
-       <h5 class="center">How the magic happens</h5>
-        <div class="col s12 m6 skillz">
-          <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">done</i></h2>
-            <h4>What I've learned</h4>
-            <div class="center">
-            <i class="devicon-html5-plain-wordmark colored"></i>
-            <i class="devicon-css3-plain-wordmark colored"></i>
-            <i class="devicon-sass-original colored"></i>
-            <i class="devicon-bootstrap-plain-wordmark colored"></i>
-            <i class="devicon-chrome-plain-wordmark colored"></i>
-            <i class="devicon-git-plain-wordmark colored"></i><br/>
-            <i class="devicon-github-plain-wordmark colored"></i>
-            <i class="devicon-sourcetree-plain-wordmark colored"></i>
-            <i class="devicon-javascript-plain-wordmark colored"></i>
-            <i class="devicon-jquery-plain-wordmark colored"></i>
-            <i class="devicon-react-original-wordmark colored"></i>
+       <h3 id="bringMeHere">Core Tech Skills</h3>
+       <h5>How the magic happens</h5>
+       <hr/>
+        <div class="col xs12 s6 skillz">
+          <h2 class="center brown-text"><i class="material-icons">done</i></h2>
+          <h4 class="center">What I work with:</h4>
+          <div class="col s4">
+            <h6 >Front-End</h6>
+              <ul>HTML</ul>
+              <ul>CSS</ul>
+              <ul>SASS</ul>
+              <ul>Bootstrap</ul>
+              <ul>Materialize</ul>
+              <ul>Responsive Design</ul>
+              <ul>Javscript</ul>
+              <ul>React</ul>
+              <ul>Redux</ul>
+              <ul>Angular</ul>
+            </div>
+            <div class="col s4">
+            <h6>Back-End</h6>
+              <ul>Node.js</ul>
+              <ul>Express.js</ul>
+              <ul>Python</ul>
+              <ul>MySQL</ul>
+              <ul>Sequel Pro</ul>
+            </div>
+            <div class="col s4">
+              <h6>Development Tools</h6>
+                <ul>Git, Github</ul>
+                <ul>SourceTree</ul>
+                <ul>Amazon Web Services</ul>
+                <ul>Chrome Dev Tools</ul>
+                <ul>Agile Development</ul>
+                <ul>UX/UI Principles</ul>
+            </div>
           </div>
-          </div>
-        </div>
-        <div class="col s12 m6">
-          <div class="icon-block">
+        <div class="col xs12 s6">
           <h2 class="center brown-text"><i class="material-icons">trending_up</i></h2>
-          <h4 class="center">What I'm learning now</h4>
-          <div class="center">
-            <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
-            <i class="devicon-mongodb-plain-wordmark colored"></i>
-            <i class="devicon-nodejs-plain-wordmark colored"></i>
-            <i class="devicon-python-plain-wordmark colored"></i><br/><br/>
-          </div>
+          <h4 class="center">What I'm learning now:</h4>
+          <div class="col s6 offset-s4" style="text-align:left">
+            <ul>Python</ul>
+            <ul>Ruby on Rails</ul>
+            <ul>Data Structures</ul>
+            <ul>React Native for Exponent</ul>
+            <ul>More Node.js</ul>
           </div>
         </div>
       </div>
@@ -119,10 +132,12 @@
 
 
       <div class="row">
-        <div class="col s12 center projects" id="projects">
+        <div class="col s12 projects" id="projects">
           <h3><i class="mdi-content-send brown-text"></i></h3>
             <h2 id="projects-title">Projects</h2>
-            <div class="container col s12 thumbnail">
+            <hr/>
+
+            <div class="container col s12 thumbnail" style="margin-top:3%">
               <div class="col s6">
                   <img src="new_story.png" alt="new_story"/>
                   <h3>Group Video Translation App</h3>
@@ -135,8 +150,10 @@
                   <p>Technologies used include Node, Express, MySQL, Angular, and Materialize</p>
                   <p>To improve this project, we want to integrate with Youtube, Vimeo, and DropBox APIs as well as create multiple user accounts</p>
               </div>
-            </div>            
-            <div class="col s6 container thumnail">
+            </div>
+
+            <div class=" col s12 container thumbnail">
+              <div class="col s6">
                 <img src=tv1.png alt="up8ed_news-aggregator"/>
                 <h3>Upd8ed</h3>
                 <p><a href="https://github.com/mason0958/News-Aggregator" target="_blank">See code on Github</a> || <a href="http://annasedlar.com/upd8ed" target="_blank" style="margin:'auto'; padding:'10%'">Click for live demo</a></p>
@@ -148,10 +165,12 @@
                 <p>This site is built solely on the front-end as a week-long sprint project with Connie, Mason, Paul at <a href="http://digitalcrafts.com" target="_blank">DigitalCrafts</a>.</p>
                 <p> (P.S. we won "Best Overall"!)</p>
                 <p>We are working to implement a reddit-style upvote/downvote component on the back-end.</p>
+             </div>
             </div>
+
             <div class="container col s12 thumbnail">
                 <div class="col s6">
-                    <img src=chatdraw.png alt="chatdraw"/>
+                    <img src=chatdraw.png alt="chatdraw" style="border:1px solid black"/>
                     <h3>Chat-Draw</h3>
                     <p><a href="https://github.com/annasedlar/Chat-Draw" target="_blank">See code on Github</a> || <a href="http://annasedlar.com/chatdraw" target="_blank" style="margin:'auto', padding:'10%'">Click for live demo</a></p>
                    </a>
@@ -163,7 +182,7 @@
             </div> 
             <div class="container col s12 thumbnail">
               <div class="col s6">
-                  <img src=whattowatch.png alt="whattowatch"/>
+                  <img src=whattowatch.png alt="whattowatch" style="border:1px solid black"/>
                   <h3>What To Watch</h3>
                   <p><a href="https://github.com/annasedlar/What_to_watch" target="_blank">See code on Github</a> || <a href="http://annasedlar.com/whattowatch" target="_blank" style="margin:'auto', padding:'10%'">Click for live demo</a></p>
                  </a>
@@ -178,9 +197,20 @@
         </div>
       </div>
     </div>
+    <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">text text text</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="rice.jpg" alt="Unsplashed background img 3"></div>
+  </div>
 
     <div class="container col s12 row">
-      <h2 class="center">Education</h2>
+      <h2>Education</h2>
+      <hr/>
       <h4><br/></h4>
       <div class="col s6">
       <div style="margin-right:40px">
@@ -205,55 +235,36 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">I'm creatively inspired by the natural world and bring that sense of wonder to web development</h5>
+          <h5 class="header col s12 light">I'm creatively inspired by the natural world and aim to bring that sense of wonder to web development</h5>
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="colom_green.jpg" alt="Unsplashed background img 3"></div>
+    <div class="parallax"><img src="colom_green.jpg" alt="Unsplashed background img 3" style="filter: saturate(1.2)"></div>
   </div>
 
 
 
 
 
-  <footer class="page-footer teal">
-    <div class="container">
+  <footer class="page-footer teal lighten-1">
+<!--     <div class="container"> -->
       <div class="row">
-        <div class="col l6 s12">
+        <div class="col l6 s12 offset-l1">
           <h5 class="white-text">Connect with me</h5>
-          <p class="grey-text text-lighten-4">I love to meet new people and would love to talk about your web, app, or tech needs. Email me at annasedlar@gmail.com or find me on these platforms:</p>
-
-            <!-- <div>
-            <a href="https://www.linkedin.com/in/annasedlar" target="_blank"><img src={li} className='lg_icons' alt='linkedin' /></a>
-            <a href="https://github.com/annasedlar" target="_blank"><img src={git} className='lg_icons' alt='github' /></a>
-            <a href="https://twitter.com/annasedlar" target="_blank"><img src={tw} className='lg_icons' alt='twitter' /></a>
-            <a href="https://www.facebook.com/annasedlar" target="_blank"><img src={fb} className='lg_icons' alt='facebook'/></a>
-            <a href="mailto:annasedlar@gmail.com" target="_blank"><img src={mail} className='lg_icons' alt='email_me' /></a>
-            </div>
-         </div>
-        <div className="col-sm-12 footer row">
-          <div className="foot">
-            
-          </div>
+          <p class="grey-text text-lighten-4">I love to meet new people and would love to talk about your web, app, or tech needs. If I am unable to assist you, I can surely point you in the direction of someone who can! Email me at annasedlar@gmail.com or find me on the platforms on the right.</p>
         </div>
-      </div> -->
-        </div>
-        <div class="col l2 s12">
-        </div>
-        <div class="col l4 s12">
-          <div style="float:right">
+        <div class="col l4 offset-l1 s12">
+          <div style="float:right; margin-right: 20px">
+            <a href="Sedlar_Anna_Resume.pdf" target="_blank"><img src="resume.png" class="lg_icons" alt="resume"/></a>
             <a href="https://www.linkedin.com/in/annasedlar" target="_blank"><img src="sm-icons/linkedin.png" class='lg_icons' alt='linkedin' /></a>
             <a href="https://github.com/annasedlar" target="_blank"><img src="sm-icons/github.png" class='lg_icons' alt='github' /></a>
             <a href="https://twitter.com/annasedlar" target="_blank"><img src="sm-icons/twitter.png" class='lg_icons' alt='twitter' /></a>
             <a href="mailto:annasedlar@gmail.com" target="_blank"><img src="sm-icons/mail.png" class='lg_icons' alt='email_me' /></a>
           </div>
-        </div>
+  <!--       </div> -->
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">
-      Made with <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
     </div>
   </footer>
 
