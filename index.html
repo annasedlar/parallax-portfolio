@@ -88,13 +88,14 @@
                 <ul>Chrome Dev Tools</ul>
                 <ul>Agile Development</ul>
                 <ul>UX/UI Principles</ul>
+                <ul>Test Driven Development (Jasmine)</ul>
             </div>
           </div>
         <div class="col xs12 s6">
           <h2 class="center brown-text"><i class="material-icons">trending_up</i></h2>
           <h4 class="center">What I'm learning now:</h4>
           <div class="col s6 offset-s4" style="text-align:left">
-            <ul>Python</ul>
+            <ul>More Python</ul>
             <ul>Ruby on Rails</ul>
             <ul>Data Structures</ul>
             <ul>React Native for Exponent</ul>
@@ -114,7 +115,7 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="thailand.jpg" alt="Unsplashed background img 2"></div>
+    <div class="parallax"><img src="thailand.jpg" alt="Unsplashed background img 2" style="filter:saturate(0.9);"></div>
   </div>
 
   <div class="container">
@@ -141,14 +142,14 @@
               <div class="col s6">
                   <img src="new_story.png" alt="new_story"/>
                   <h3>Group Video Translation App</h3>
-                  <p><a href="https://github.com/annasedlar/Story-Translate" target="_blank">See code on Github</a> || <a href="http://www.annasedlar.com/Story-Translate/frontend/#/login target="_blank" style="margin:'auto', padding:'10%'">Click for live demo (username: test | password: test)</a></p>
+                  <p><a href="https://github.com/annasedlar/Story-Translate" target="_blank">See code on Github</a> || <a href="http://www.annasedlar.com/Story-Translate/frontend/#/login target="_blank" style="margin:'auto', padding:'10%'">Click for live demo (user: test | pass: test)</a></p>
                  </a>
               </div>
               <div class="col s6">
                   <h5>Upload, View and Translate Videos in an Organized Manner</h5>
                   <p>Designed to assist San Fancisco-based non-profit <a href="https://www.newstorycharity.org/" target="_blank">New Story</a> to organize video translations within their team.</p>
-                  <p>Technologies used include Node, Express, MySQL, Angular, and Materialize</p>
-                  <p>To improve this project, we want to integrate with Youtube, Vimeo, and DropBox APIs as well as create multiple user accounts</p>
+                  <p>Technologies used include Node, Express, MySQL, Angular, and Materialize.</p>
+                  <p>To improve this project, we want to integrate with Youtube, Vimeo, and DropBox APIs as well as create multiple user accounts.</p>
               </div>
             </div>
 
@@ -178,7 +179,7 @@
                 <div class="col s6">
                     <h5>Chat-Draw is a Chat Room</h5>
                     <p>A real-time chat/drawing application built using the HTML5 canvas element, websockets (socket.io) and Node.js</p>
-                    <p>A great demonstration of the asynchronous nature of javascript and the </p>
+                    <p>A great demonstration of the asynchronous nature of javascript and the real-time/persistent connection suitablity of Node.</p>
                 </div>
             </div> 
             <div class="container col s12 thumbnail">
@@ -191,7 +192,7 @@
               <div class="col s6">
                   <h5>What To Watch is a Movie App</h5>
                   <p>This app pulls live data to see currently playing movies, filter movies by genre, and search a movie based on movie or actor/ess name. Built with the TMDb (The Movie Database) API</p>
-                  <p>These link to the original project. Since then, another 4 iterations have been written using various technologies including Express, React, and Mongo. Eventually they will all be pulled together into one.</p>
+                  <p>Four separate iterations have been written using various technologies including Express, React, and Mongo.</p>
               </div>
             </div>                 
           </div>
@@ -267,8 +268,8 @@
     </div>
 
     <div class="footer-copyright">
-      <div style="margin-left: 9%">
-        <p>Psst! <a href="https://hypepotamus.com/people/anna-sedlar/" target="_blank" style="color:#b2dfdb;">Check out this article about me by Atlanta's Tech journal, Hype! <img src="hype.png" style="height:30px; display:inline-block; border:1px solid black" align="middle"/></a></p>
+      <div style="margin-left: 9%" id="parent">
+        <p>Psst - <a href="https://hypepotamus.com/people/anna-sedlar/" target="_blank" style="color: ;">Check out this article about me by Atlanta's Tech journal, Hype! <img id="hype" src="hype.png" style="height:30px; display:inline-block; " align="middle"/></a></p>
       </div>
     </div>
 
@@ -280,11 +281,22 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script>
-    $("#download-button").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#bringMeHere").offset().top
-      }, 1000);
+
+    $(document).ready(function(){
+        $("#download-button").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#bringMeHere").offset().top
+          }, 1000);
+        });
+
+      $('#parent').hover(function() {
+        $('#hype').css('transform', 'rotate(10deg)');
+      }, function() {
+        // on mouseout, reset the background colour
+        $('#hype').css('transform', 'rotate(0deg)');
+      });
     });
+
   </script>
   </body>
 </html>
